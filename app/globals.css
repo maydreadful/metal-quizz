@@ -2,33 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 229, 229, 229;
-  --background-start-rgb: 5, 5, 5;
-  --background-end-rgb: 0, 0, 0;
-}
-
 body {
-  background: rgb(var(--background-start-rgb));
-  color: rgb(var(--foreground-rgb));
-  -webkit-font-smoothing: antialiased;
+  background-color: #0a0a0a;
+  /* Textura de ruído para parecer pedra/metal escovado */
+  background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+  color: #b0b0b0;
+  font-family: 'serif';
 }
 
-/* Scrollbar Gótica Customizada */
-::-webkit-scrollbar {
-  width: 10px;
+/* Scrollbar estilo "corrente/ferro" */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { 
+  background: #333; 
+  border: 1px solid #444;
 }
 
-::-webkit-scrollbar-track {
-  background: #050505;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #3f0000;
-  border: 2px solid #050505;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #7f0000;
+/* Efeito de separador com ondinhas (visto na imagem) */
+.divider-ornate {
+  height: 20px;
+  background-image: radial-gradient(circle at 10px 15px, transparent 12px, #151515 13px);
+  background-size: 20px 20px;
 }

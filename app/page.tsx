@@ -2,8 +2,8 @@ import MetalQuizz from "./components/MetalQuizz"; // Agora o endereço está cer
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050505] py-20 px-4">
-      <div className="max-w-4xl mx-auto">
+    <section className="w-full min-h-full bg-[#050505] flex items-center justify-center px-4 py-20">
+      <div className="w-full max-w-4xl">
         <header className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter">
             Metal <span className="text-red-700">Oracle</span>
@@ -12,6 +12,6 @@ export default function Home() {
         </header>
         <MetalQuizz />
       </div>
-    </main>
+    </section>
   );
 }
